@@ -5,6 +5,8 @@ import tempfile
 import torch
 import sys
 import pathlib
+import os
+
 
 # Dynamically add the yolov5 directory to sys.path
 yolov5_path = os.path.join(os.path.dirname(__file__), 'yolov5')
