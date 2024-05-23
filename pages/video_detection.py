@@ -5,14 +5,16 @@ import tempfile
 import torch
 import sys
 import pathlib
+
+# Add YOLOv5 repository to Python path
+sys.path.append('yolov5')  # Adjust this path to your yolov5 repository
+
 from utils.general import non_max_suppression, scale_boxes
 
 # Adding a temporary fix for Windows compatibility
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
-# Add YOLOv5 repository to Python path
-sys.path.append('yolov5')  # Adjust this path to your yolov5 repository
 
 # Importing centralized model loader
 from yolov5_model import load_yolov5_model  
