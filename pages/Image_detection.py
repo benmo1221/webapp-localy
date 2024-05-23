@@ -5,6 +5,7 @@ import torch
 import sys
 import cv2
 import pathlib
+import os
 
 # Adding a temporary fix for Windows compatibility
 temp = pathlib.PosixPath
