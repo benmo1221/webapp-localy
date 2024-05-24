@@ -9,7 +9,7 @@ import os
 
 
 # Dynamically add the yolov5 directory to sys.path
-yolov5_path = os.path.join(os.path.dirname(__file__), 'yolov5')
+yolov5_path = os.path.join(os.path.dirname(__file__), '..', 'yolov5')
 if yolov5_path not in sys.path:
     sys.path.append(yolov5_path)
 
